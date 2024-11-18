@@ -1,0 +1,35 @@
+header {
+  & img[src*="logo"] {
+    margin-right: auto;
+  }
+
+  & .search-icon {
+    background: url(../assets/icons/magnifying-glass.svg) no-repeat center;
+    width: 3.2rem;
+    height: 3.2rem;
+
+    &:hover {
+      background: url(../assets/icons/magnifying-glass-hover.svg) no-repeat
+        center;
+    }
+  }
+
+  & .profile {
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-width: 4rem;
+  }
+}
+
+@media (width >= 1280px) {
+  header {
+    & > div {
+      gap: 1.6rem;
+    }
+
+    & nav > ul {
+      font-size: 1.6rem;
+    }
+  }
+}
