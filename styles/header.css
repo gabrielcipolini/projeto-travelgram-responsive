@@ -1,4 +1,6 @@
 header {
+  color: var(--text-color-secondary);
+
   & img[src*="logo"] {
     margin-right: auto;
   }
