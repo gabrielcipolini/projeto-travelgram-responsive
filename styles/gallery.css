@@ -1,0 +1,15 @@
+#gallery {
+  & > div {
+    --gap-base: 1.6rem;
+    gap: var(--gap-base);
+  }
+}
+
+@media (width >= 1280px) {
+  #gallery {
+    & > div {
+      --gap-base: 2.4rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

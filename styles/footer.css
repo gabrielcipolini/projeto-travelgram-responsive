@@ -1,0 +1,22 @@
+footer {
+  color: var(--text-color-secondary);
+  line-height: 150%;
+
+  & > div {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (width >= 1280px) {
+  footer {
+    & > div {
+      justify-content: initial;
+      text-align: initial;
+    }
+
+    & .footer-bottom {
+      margin-left: auto;
+    }
+  }
+}
