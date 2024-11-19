@@ -31,14 +31,13 @@
   --fs-md: 1.4rem;
   --fs-sm: 1.2rem;
 
-  --px-lg: 1.6rem;
   --py-base: 1.6rem
 }
 
 @media (width >= 1280px) {
   :root {
     --fs-lg: 3.2rem;
-    /* --py-base: 2.4rem; */
+    --py-base: 2.4rem;
   }
 }
 

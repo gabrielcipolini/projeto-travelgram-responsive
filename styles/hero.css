@@ -1,2 +1,62 @@
 #hero {
+  padding: 1.6rem;
+
+  & > div {
+    justify-content: space-between;
+  }
+
+  & img[src*="profile"] {
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+    max-width: 17.6rem;
+  }
+
+  & .user-card {
+    --gap-base: 1.6rem;
+    gap: var(--gap-base);
+    justify-content: start;
+
+    & header {
+      max-width: 29.6rem;
+      & p {
+        color: var(--text-color-secondary);
+      }
+    }
+  }
+
+  & ul {
+    width: 27rem;
+
+    & li {
+      padding-left: 3.2rem;
+    }
+
+    & li:nth-child(1) {
+      background: url(../assets/icons/map-pin.svg) no-repeat;
+    }
+
+    & li:nth-child(2) {
+      background: url(../assets/icons/airplane-tilt.svg) no-repeat;
+    }
+
+    & li:nth-child(3) {
+      background: url(../assets/icons/image.svg) no-repeat;
+    }
+  }
+}
+
+@media (width >= 1280px) {
+  #hero {
+    padding: 0;
+
+    & .user-card {
+      --gap-base: 3.2rem;
+
+      & header {
+        max-width: 38rem;
+      }
+    }
+  }
 }
